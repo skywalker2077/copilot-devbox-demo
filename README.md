@@ -1,10 +1,10 @@
-# copilot-devbox-demo
+﻿# copilot-devbox-demo
 
 Dev Box + GitHub Copilot art-of-the-possible demo.
 
 ## Overview
 
-A minimal Python Flask REST API used to demonstrate the **intent → agent → PR → governed delivery** workflow using Microsoft Dev Box and GitHub Copilot.
+A minimal Python Flask REST API used to demonstrate the **intent -> agent -> PR -> governed delivery** workflow using Microsoft Dev Box and GitHub Copilot.
 
 ## Endpoints
 
@@ -12,7 +12,7 @@ A minimal Python Flask REST API used to demonstrate the **intent → agent → P
 |--------|------|-------------|
 | GET | `/` | Returns API info |
 
-> **Note:** A `/health` endpoint is intentionally missing — it will be added live by GitHub Copilot during the demo (Issue #1).
+> **Note:** A `/health` endpoint is intentionally missing -- it will be added live by GitHub Copilot during the demo (Issue #1).
 
 ## Setup
 
@@ -33,12 +33,12 @@ pytest test_app.py -v
 
 ```
 Developer (Intent: GitHub Issue)
-   ↓
+   |
 GitHub Copilot Agent
-   ↓
-Branch → Pull Request → CI (GitHub Actions + CodeQL)
-   ↓
-Merge → Issue closes automatically
+   |
+Branch -> Pull Request -> CI (GitHub Actions + CodeQL)
+   |
+Merge -> Issue closes automatically
 ```
 
 ## Adapting for WDC
@@ -51,4 +51,4 @@ Merge → Issue closes automatically
 
 ---
 
-*Walker Gomes Viana — Accenture / Avanade*
+*Walker Gomes Viana -- Accenture / Avanade*
