@@ -9,9 +9,8 @@ def index():
     return jsonify({"message": "Demo API", "version": VERSION})
 
 
-@app.route("/health")
-def health():
-    return jsonify({"status": "ok", "version": VERSION})
+# Issue #1: Add /health endpoint here
+# This is where Copilot will make its change during the demo
 
 
 if __name__ == "__main__":
