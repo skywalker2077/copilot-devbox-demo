@@ -11,8 +11,8 @@ A minimal Python Flask REST API used to demonstrate the **intent -> agent -> PR 
 | Method | Path | Description |
 |--------|------|-------------|
 | GET | `/` | Returns API info |
+| GET | `/health` | Returns health status |
 
-> **Note:** A `/health` endpoint is intentionally missing -- it will be added live by GitHub Copilot during the demo (Issue #1).
 
 ## Setup
 
@@ -27,6 +27,7 @@ API runs at `http://localhost:5000`.
 
 ```bash
 pytest test_app.py -v
+curl http://localhost:5000/health
 ```
 
 ## Architecture
