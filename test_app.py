@@ -15,4 +15,7 @@ def test_index(client):
     assert res.json["version"] == "1.0"
 
 
-# Test for /health will be added by Copilot during the demo
+def test_health(client):
+    res = client.get("/health")
+    assert res.status_code == 200
+    assert res.json == {"status": "ok", "version": "1.0"}
