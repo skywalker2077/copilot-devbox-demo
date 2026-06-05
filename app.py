@@ -1,4 +1,4 @@
-﻿from flask import Flask, jsonify
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 VERSION = "1.0"
@@ -9,8 +9,9 @@ def index():
     return jsonify({"message": "Demo API", "version": VERSION})
 
 
-# Issue #1: Add /health endpoint here
-# This is where Copilot will make its change during the demo
+@app.route("/health")
+def health():
+    return jsonify({"status": "ok", "version": VERSION})
 
 
 if __name__ == "__main__":
